@@ -39,14 +39,12 @@ Esto crea `C:\data\nodo1`, `C:\data\nodo2`, `C:\data\nodo3`, `C:\data\arb` y cop
 ### 4. Inicializar el replica set (solo la primera vez)
 
 ```js
-mongosh --port 27017
-
 rs.initiate({
   _id: "rs0",
   members: [
-    { _id: 0, host: "localhost:27017" },
-    { _id: 1, host: "localhost:27018" },
-    { _id: 2, host: "localhost:27019" },
+    { _id: 0, host: "localhost:27017", priority: 10 },
+    { _id: 1, host: "localhost:27018", priority: 1 },
+    { _id: 2, host: "localhost:27019", priority: 1 },
     { _id: 3, host: "localhost:27020", arbiterOnly: true }
   ]
 })
