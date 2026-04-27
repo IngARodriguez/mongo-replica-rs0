@@ -1,0 +1,8 @@
+# Datos de MongoDB — nunca al repo
+*.wt
+*.lock
+*.bson
+journal/
+diagnostic.data/
+_tmp/
+mongod.log
