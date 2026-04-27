@@ -54,21 +54,6 @@ rs.initiate({
 Esperar ~10 segundos hasta que nodo1 se convierta en PRIMARY.
 
 ---
-
-## Uso diario
-
-### Encender
-
-```powershell
-.\iniciar.ps1
-```
-
-### Apagar
-
-```powershell
-.\apagar.ps1
-```
-
 ### Verificar estado
 
 ```js
@@ -87,6 +72,20 @@ localhost:27020  ARBITER
 ```
 
 ---
+
+## Uso despues de haber iniciado la replica
+
+### Encender
+
+```powershell
+.\iniciar.ps1
+```
+
+### Apagar
+
+```powershell
+.\apagar.ps1
+```
 
 ## Estructura del repo
 
