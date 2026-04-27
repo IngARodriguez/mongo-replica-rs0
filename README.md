@@ -39,6 +39,7 @@ Esto crea `C:\data\nodo1`, `C:\data\nodo2`, `C:\data\nodo3`, `C:\data\arb` y cop
 ### 4. Inicializar el replica set (solo la primera vez)
 
 ```js
+mongosh --port 27017
 rs.initiate({
   _id: "rs0",
   members: [
